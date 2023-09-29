@@ -1,0 +1,47 @@
+
+<div class="form-container">
+
+  <div class="signup-profile">
+
+
+    <img src="../../../assets/peace.png" alt="">
+
+  </div>
+<div class="form">
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div class="register">
+      Register
+    </div>
+
+    <div >
+    <label class="form-label" for="fname">First Name: </label>
+    <input class="form-control" type="text" id="fname" formControlName="Fname" >
+</div>
+
+<div >
+  <label class="form-label" for="lname">Last Name: </label>
+  <input class="form-control" type="text" id="lname" formControlName="Lname" >
+</div>
+
+<div >
+  <label class="form-label" for="username">Username: </label>
+  <input class="form-control" type="text" id="username" formControlName="Username" >
+</div>
+<div>
+  <label class="form-label" for="email">Email: </label>
+  <input class="form-control" type="email" id="email" formControlName="email" >
+</div>
+<div >
+  <label class="form-label" for="pass">Password: </label>
+  <input class="form-control" type="text" id="pass" formControlName="Password" >
+</div>
+
+<input class="form-control form-control-btn " type="submit" value="Signup" [disabled]="signupForm.invalid">
+
+  </form>
+</div>
+
+</div>
+
+
+

@@ -1,0 +1,124 @@
+
+
+    <div class="bar">
+      <a routerLink="/" class="bar-item">Home</a>
+      <a href="" class="bar-item hidden-content-tablet">News</a>
+
+
+
+
+
+
+
+      <a routerLink="euee/homepage" routerLinkActive="active" class="drp bar-item">EUEE Exams</a>
+
+
+      <a routerLink="/freshman/homepage" routerLinkActive="active" class="bar-item hidden-content-tablet">Freshman</a>
+
+
+      <div  class="drp bar-item" (click)="displayUniveristy()" id="drop-button">Univeristy Courses <i class="fa  fa-chevron-down " id="btn-icon" style="color: white;"></i>
+
+      </div>
+
+
+
+      <a href="" class="bar-item hidden-content-tablet">About us</a>
+
+
+      <button type="button" (click)="DisplayMore()" class="bar-item hidden-content">+More <i class="fa  fa-chevron-down " id="btn-icon" style="color: white;"></i>
+      </button>
+    </div>
+<div class="container-fluid position-relative">
+
+  <div class="toggle-contents "
+  [ngClass]="{hidden:isDisplayMore}"
+  >
+    <a href="" class="bar-item">News</a>
+    <a routerLink="/freshman" routerLinkActive="active" class="bar-item">Freshman</a>
+    <a href="" class="bar-item">About us</a>
+
+
+</div>
+
+
+
+
+    <!-- Univeristy drop down button -->
+
+    <div class="drp-cnt-flex "
+    [ngClass]="{hiddenuniverity:isHiddenUnveristy}"
+   >
+  <span class="unverity-list"  *ngFor="let university of Univeristy; let j=index"> <img class="univerity-logo" [src]="university.logo" alt=""><a href="" class="drop-item">{{university.name}}</a></span> </div>
+
+
+
+  <div class="row">
+    <div class="col-12 app-banner  position-relative">
+
+      <!-- <div class="image">image</div> -->
+    <img class="welcome-image" src="./../../assets/ethio exams academy.avif" height="auto" width="100%" alt="">
+  <div class="educational-qoutes ">
+    <div class="main-title">Ethio Exams Academy</div>
+    <div class="sub-title">From HighSchool To Univeristy Students</div>
+    <div class="row text-info justify-content-center ">
+      <div class="main-text col-12">
+        <ul class="items">
+          <li class="item-list">EUEE Exams</li>
+          <li class="item-list">Grade 12 Model Exams</li>
+          <li class="item-list">All Ethiopian Univerity Final and Model Exams </li>
+          <li class="item-list">All Univeristies and HighSchools TextBooks Handouts and Modules</li>
+          <li class="item-list">Participation Exams For All Students</li>
+          <li class="item-list">All Univeristy and HighSchools Courses Tutorials </li>
+        </ul>
+      </div>
+      <div class="text-1 col-lg-4"><strong>EDUCATION</strong>
+      THE MOST POWERFUL WEAPON WHICH YOU CAN USE TO CHANGE  THE WORLD
+    <p><i>Nelson Mandela</i></p></div>
+      <div class="text-2 col-lg-4"><strong>EDUCATION</strong>
+        IS PASSPORT TO THE FUTURE FOR TOMORROW BELONGS TO THOSE WHO PREPARE FOR IT TODAY.
+        <p><i>Malcon X</i></p>
+      </div>
+      <div class="text-3 col-lg-4"><strong>EDUCATION</strong>
+      IS NOT PREPARATION FOR LIFE. EDUCATION IS LIFE ITSELF
+    <p><i>John Dewey</i></p></div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="card position-relative">
+      <img class="card-img-top" src="./../../assets/highschools.png" alt="">
+      <div class="card-body">
+        <div class="card-title text-center">EUEE Exams From 2000-2015 Years</div>
+        <p class="card-subtitle">From Grade 9 EUEE Exams</p>
+        <p class="card-subtitle">From Grade 10 EUEE Exams</p>
+        <p class="card-subtitle">From Grade 11 EUEE Exams</p>
+        <p class="card-subtitle">From Grade 12 EUEE Exams</p>
+        <button class="btn btn-primary card-button">see EUEE EXams By Year</button>
+        <!-- <button class="btn btn-primary card-button">see EUEE EXams By Grades</button> -->
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!--
+  cards -->
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <!-- <app-footer></app-footer> -->
+
+  <app-footer></app-footer>

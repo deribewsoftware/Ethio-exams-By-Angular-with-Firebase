@@ -1,0 +1,13 @@
+
+<div class=" bg-info p-0 overflow-auto hidden-content-tablet scrol" style="height: 1200px;">
+
+  <div class="subject-text">{{Subject}}</div>
+  <div class="year-text">{{subgrade}}</div>
+<div class="menu-flex" *ngFor="let menu of sideLists">
+
+<a [routerLink]="menu.navRoute" routerLinkActive="active" class="year-item">{{menu.navLabel}}</a>
+</div>
+</div>
+
+
+

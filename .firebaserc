@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ethio-exams": {
+      "hosting": {
+        "sun": [
+          "ethio-exams"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ethio-exams"
+  }
+}

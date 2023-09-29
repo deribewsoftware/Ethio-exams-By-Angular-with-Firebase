@@ -1,0 +1,61 @@
+.menu-flex{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  padding: 0;
+  /* margin-left: 50px; */
+}
+.year-item{
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  font-family: Noto Serif;
+  font-size: large;
+  font-weight: bold;
+
+  background-color: #ddd;
+  border-bottom: 1px solid gray;
+}
+.year-item:hover{
+  background-color: #0dcaf0;
+  color: black;
+}
+
+
+
+.subject-text{
+  font-family: Noto Serif ;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 5px;
+  text-align: center;
+}
+.year-text{
+  font-family: Noto Serif ;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 5px;
+  color: red;
+  text-align: center;
+}
+@media screen and (max-width:900px){
+  .hidden-content{
+    display: block;
+  }
+  .hidden-content-tablet{
+
+    display: none;
+  }
+
+
+  /* text banner */
+
+}
+.active{
+  background-color: green;
+}
+.scrol{
+  overflow: scroll;
+}

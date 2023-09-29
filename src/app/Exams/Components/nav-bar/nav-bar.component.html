@@ -1,0 +1,115 @@
+
+<div class="bar">
+  <a routerLink=""  class="bar-item">Home</a>
+  <button class="bar-item" (click)="navigatebutton()">News</button>
+
+
+    <div  class="drp  " *ngFor="let nav of navigations; let j=index">
+
+  <a class="bar-item" [routerLink]="nav.navRoute" routerLinkActive="active" class=" bar-item hidden-content-tablet ">{{nav.navLabel}}
+
+  </a>
+    </div>
+    <a routerLink="/auth/signup" routerLinkActive="active">Singup</a>
+    <a routerLink="/auth/login" routerLinkActive="active">Login</a>
+
+<button class="tablet-toggle bar-item hidden-content"
+ id="tablet-toggle" (click)="showHideButton()"  >+More <i class="fa  fa-chevron-down " id="toggle-icon" ></i></button>
+
+
+
+
+
+
+
+<div class="contain position-relative m-0">
+
+  <div [hidden]="moreButtonExamshidden" class="toggle-content position-absolute  top-0 z-3 " id="toggle-content">
+
+
+    <div class=" bar-item ">English
+<div class="year-list">
+  <a routerLink="/year/english" routerLinkActive="active"  class="year-list-bar">2015/2023</a>
+<a href="" class="year-list-bar">2015/2023</a>
+<a href="" class="year-list-bar">2015/2023</a>
+<a href="" class="year-list-bar">2015/2023</a>
+<a href="" class="year-list-bar">2015/2023</a>
+<a href="" class="year-list-bar">2015/2023</a>
+</div>
+
+    </div>
+    <div href="" class=" bar-item ">Mathematics
+      <div class="year-list">
+        <a href="" class="year-list-bar">2015/2023</a>
+      <a href="" class="year-list-bar">2015/2023</a>
+      <a href="" class="year-list-bar">2015/2023</a>
+      <a href="" class="year-list-bar">2015/2023</a>
+      <a href="" class="year-list-bar">2015/2023</a>
+      <a href="" class="year-list-bar">2015/2023</a>
+      </div>
+
+          </div>
+          <div href="" class=" bar-item ">SAT
+            <div class="year-list">
+              <a href="" class="year-list-bar">2015/2023</a>
+            <a href="" class="year-list-bar">2015/2023</a>
+            <a href="" class="year-list-bar">2015/2023</a>
+            <a href="" class="year-list-bar">2015/2023</a>
+            <a href="" class="year-list-bar">2015/2023</a>
+            <a href="" class="year-list-bar">2015/2023</a>
+            </div>
+
+                </div>
+                <div routerLink="/year/physics" routerLinkActive="active" class=" bar-item ">Physics
+                  <div class="year-list">
+                    <a href="" class="year-list-bar">2015/2023</a>
+                  <a href="" class="year-list-bar">2015/2023</a>
+                  <a href="" class="year-list-bar">2015/2023</a>
+                  <a href="" class="year-list-bar">2015/2023</a>
+                  <a href="" class="year-list-bar">2015/2023</a>
+                  <a href="" class="year-list-bar">2015/2023</a>
+                  </div>
+
+                      </div>
+                      <div href="" class=" bar-item ">Chemistry
+                        <div class="year-list">
+                          <a href="" class="year-list-bar">2015/2023</a>
+                        <a href="" class="year-list-bar">2015/2023</a>
+                        <a href="" class="year-list-bar">2015/2023</a>
+                        <a href="" class="year-list-bar">2015/2023</a>
+                        <a href="" class="year-list-bar">2015/2023</a>
+                        <a href="" class="year-list-bar">2015/2023</a>
+                        </div>
+
+                            </div>
+                            <div  class=" bar-item ">Biology
+                              <div class="year-list">
+                                <a routerLink="/year/biology"  routerLinkActive="active" class="year-list-bar">2015/2023</a>
+                              <a href="" class="year-list-bar">2015/2023</a>
+                              <a href="" class="year-list-bar">2015/2023</a>
+                              <a href="" class="year-list-bar">2015/2023</a>
+                              <a href="" class="year-list-bar">2015/2023</a>
+                              <a href="" class="year-list-bar">2015/2023</a>
+                              </div>
+
+                                  </div>
+                                  <div href="" class=" bar-item ">Civics
+                                    <div class="year-list">
+                                      <a href="" class="year-list-bar">2015/2023</a>
+                                    <a href="" class="year-list-bar">2015/2023</a>
+                                    <a href="" class="year-list-bar">2015/2023</a>
+                                    <a href="" class="year-list-bar">2015/2023</a>
+                                    <a href="" class="year-list-bar">2015/2023</a>
+                                    <a href="" class="year-list-bar">2015/2023</a>
+                                    </div>
+
+                                        </div>
+    <a href="" class="bar-item">About us</a>
+
+
+  </div>
+
+
+  </div>
+
+

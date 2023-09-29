@@ -1,0 +1,164 @@
+
+/* Next and Previous Button */
+.topbutton,.bottombutton{
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+
+}
+
+.bottombutton{
+  margin-bottom: 0;
+}
+.topbutton{
+  margin-top: 0;
+}
+.pre,.next{
+  background-color: #04AA6D;
+  color: black;
+  font-family: Noto Serif;
+  font-size: 22px;
+  padding: 8px 16px;
+
+
+}
+.pre:hover,.next:hover{
+  background-color: Green;
+  color: white;
+
+
+
+}
+/* Exam year and subject */
+.exam-subject,.exam-year{
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+  font-family: Gloock;
+}
+.exam-subject{
+  color: red;
+
+}
+.exam-year{
+  color: blue;
+}
+.exams-bar-title,.exams-bar-grade{
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Noto Sans;
+  color: gray;
+  align-items: flex-end;
+
+  margin-bottom: 0px;
+}
+.exams-bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 3px solid gray;
+}
+
+/* Questions Style */
+.question-choice{
+  margin-left:20px ;
+}
+.question{
+  font-family: Noto Sans;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+  /* margin-left: 30px; */
+}
+.question-no{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid  #04AA6D;
+  background-color: #ddd;
+  height: 8px;
+  width: 8px;
+  font-weight: bold;
+  padding: 5px;
+}
+/* QuestionSubmit button Style */
+.btn-submit{
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Trirong", serif;
+}
+/* Question Explanation Style */
+.explanation-content{
+  background-color: #B9F6CA;
+  width: 100%;
+  padding: 5px;
+  /* margin: 5px; */
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.explanation{
+  font-family: Noto Sans;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hide{
+  display: none;
+}
+/* # Tablet */
+@media screen and (max-width:900px){
+  .hidden-content{
+    display: block;
+  }
+  .hidden-content-tablet{
+
+    display: none;
+  }
+
+
+  /* text banner */
+  .title{
+    margin-left: 40px;
+    position: absolute;
+    top:80px;
+    left: 0;
+    width: 80%;
+  }
+
+  .bar{
+    position: sticky;
+    top: 0;
+  }
+}
+/* }
+IN Modals style */
+.modal-body{
+  justify-content: center;
+  align-items: center;
+
+}
+.exam-result{
+  padding-top: 20px;
+  margin-left: 200px;
+  height: 100px;
+  width: 100px;
+  font-weight: bold;
+
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  border: 3px solid green;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* Exams bar */
+

@@ -1,0 +1,112 @@
+
+
+
+/* CARDS  */
+
+
+
+
+.card{
+  margin: 5% 0%;
+
+}
+.card:hover{
+  box-shadow: 4px 2px 8px #999;
+
+}
+.card:hover .card-button{
+
+  visibility:visible;
+  opacity: 1;
+}
+
+.card-body{
+  /* margin: 0% 0% 0% 3%;
+  padding: 6% 0%; */
+  padding: 3px;
+  font-family: "Trirong", sans-serif;
+  text-align: center;
+}
+.card:hover .card-img-top{
+  opacity: .2;
+}
+/* .card:hover .card-body:not(.card-button){
+  background-color: #04AA6D;
+  opacity: .2;
+
+} */
+.card-title{
+  font-weight: 600;
+}
+.card-subtitle{
+  font-weight: 500;
+}
+
+.card-button{
+
+  inline-size: 50%;
+  visibility: hidden;
+  position: absolute;
+  margin: 5px;
+  display: block;
+  top: 200px;
+  left: 100px;
+
+
+}
+.Exam-banner{
+  /* background-color: #04AA6D; */
+}
+.exam-image{
+  opacity: .2;
+
+  width: 100%;
+}
+
+
+.title{
+text-align: center;
+  position: absolute;
+  top:150px;
+  /* left: 150px; */
+  width: 100%;
+}
+.title-text{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.title-year{
+  font-weight: bold;
+  color: #004aad;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+/* # Tablet */
+@media screen and (max-width:900px){
+  .title-text{
+    font-size:30px ;
+  }
+.title-year{
+  font-size: 20px;
+}
+  /* text banner */
+  .title{
+    margin-left: 40px;
+    position: absolute;
+    top:80px;
+    left: 0;
+    width: 80%;
+
+  }
+  .exam-image{
+    height: 500px;
+  }
+  .bar{
+    position: sticky;
+    top: 0;
+  }
+}

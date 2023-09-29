@@ -1,0 +1,86 @@
+
+<div class="col-12  " style="height:auto; ">
+  <div class="row ">
+
+    <div class="col-lg-10 col-sm-12 col-md-12 bg-light" style="height: auto;">
+      <div class="topbutton"><button class="btn  pre"><i class="	fa fa-angle-double-left"></i>  Previous</button> <div class="timeExam">Time</div><button class="btn next ">Next <i class="	fa fa-angle-double-right"></i></button></div>
+      <div class="exams-bar">
+        <div class="exams-bar-grade" >{{subgrade}}</div>
+        <div class="exam-subject">{{Subject}} <span class="exam-year">
+          {{subTitle}}</span> Exams</div>
+          <div class="exams-bar-title" >{{subTopic}}</div>
+      </div>
+  <form action=""  id="form">
+    <div class="question" *ngFor="let ques of exams; let que_num=index">
+      <div class="question-item"><span class="question-no">{{que_num+1}}</span>{{ques.Question}}</div>
+      <div class="question-choice" *ngFor="let choice of ques.choice; let j=index">
+        <div  class="choice-one" [ngStyle]="{backgroundColor:!buttonexplanationshows &&
+          ques.CorrectAnswer==names.value && names.touched   && choice.isCorrect ? 'green':!buttonexplanationshows   && choice.isCorrect ? 'green':!buttonexplanationshows &&names.touched && ques.CorrectAnswer!=names.value ? 'red':''}" >
+
+          <input type="radio"   class="form-check-input" name="{{ques.id}}" id='choice-{{ques.id}}-{{choice.id}}' value="{{j}} " ngModel #names="ngModel" [checked]="names.touched && names.viewModel &&
+          ques.CorrectAnswer==names.viewModel
+         && names.value &&!buttonexplanationshows " [disabled]="!buttonexplanationshows" (change)="getvalue(names)" > <label for='choice-{{ques.id}}-{{choice.id}}'>{{" "+choice.choice}}</label>
+
+
+
+
+        </div>
+
+      </div>
+      <p>Answer:{{score}}</p>
+
+
+      <button [hidden]="buttonexplanationshows"(click)='buttonexplans(ques.id)' type="button" class="btn btn-info explanation  " id="explanation">Explanation <i class="fa  fa-chevron-down " id="explanation-icon" ></i>
+      </button>
+      <div class="explanation-content " [ngClass]="{hide:!(ques.id==dataMatch)}">{{ques.Explanation}}</div>
+
+      </div>
+
+
+<div class="modal fade" id="examResultModal">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        Your {{Subject}} Exams Results
+        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+
+      </div>
+      <div class="modal-body ">
+        <div class="exam-result">
+          {{score}}/{{exams.length}}
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+       <button class=" btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <button type="button" data-bs-toggle="modal" data-bs-target="#examResultModal" data-bs-whatever="@mdo"  (click)="SubmitButton()" class="btn btn-primary text-center btn-submit">Submit</button>
+
+
+
+  </form>
+
+
+      <div class="bottombutton">
+        <button class="btn pre"> <i class="	fa fa-angle-double-left"></i>Previous</button>
+         <button class="btn next ">Next <i class="	fa fa-angle-double-right"></i></button>
+        </div>
+
+
+
+    </div>
+
+
+  <!-- sponsor -->
+    <div class="col-2 hidden-content-tablet">Many users already have downloaded Bootstrap 5 from jsDelivr when visiting another site. As a result, it will be loaded from cache when they visit your </div>
+
+
+  </div>
+  </div>
+

@@ -1,0 +1,200 @@
+
+
+
+
+
+
+.bar .tablet-toggle{
+  background-color: #333;
+  border: none;
+}
+.bar{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  /* overflow-x: auto; */
+
+  background-color: #333;
+}
+.bar-item{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding-top: 8px ;
+  padding-bottom: 8px;
+  overflow: hidden;
+
+
+  font-family:  Georgia, serif;
+  font-weight: bold;
+
+}
+
+.active{
+  background-color: #04AA6D;
+}
+
+
+
+
+/* Hidden toggle lists */
+.hidden{
+  display: none;
+}
+
+
+/* TOOGLES */
+.toggle-content {
+  background-color: #0097a7;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+
+  z-index: 3;
+}
+
+.hidden-content{
+  display: none;
+
+}
+/* MEDIA QUERIES */
+
+
+/* # Tablet */
+@media screen and (max-width:900px){
+  .hidden-content{
+    display: block;
+  }
+  .hidden-content-tablet{
+
+    display: none;
+  }
+
+
+  /* text banner */
+  .title{
+    margin-left: 40px;
+    position: absolute;
+    top:80px;
+    left: 0;
+    width: 80%;
+  }
+
+  .bar{
+    position: sticky;
+    top: 0;
+  }
+}
+
+
+.drp{
+  position: relative;
+  display: inline-block;
+}
+/* Drop Down buttom */
+
+
+.drp-cnt{
+
+  display: none;
+  position: absolute;
+  /* top: 20px; */
+  background-color:#f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+
+
+}
+
+.drp:hover .drp-cnt {
+
+  display: block;
+}
+
+
+.drp-item{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: Noto Sans;
+  font-weight: bold;
+  border-bottom: 2px solid #f2f2f2;
+  padding: 8px 16px;
+  margin-top: 10px;
+  margin-bottom:0;
+
+}
+
+
+
+
+
+.drp-item:hover{
+  margin-top: 10px;
+  background-color: #04AA6D;
+  padding: 8px 16px;
+}
+.drop-item{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background-color: #333;
+  border: none;
+}
+button .bar-item:hover{
+  background-color: black;
+
+}
+
+.dropdownbtn{
+  background-color: #333;
+  padding-top: 8px ;
+  padding-bottom: 8px;
+  /* overflow: hidden; */
+  font-family:  Georgia, serif;
+  font-weight: bold;
+color: white;
+  border: none;
+  cursor: pointer;
+}
+.year-list{
+
+display: none;
+
+width: 50%;
+
+justify-items: center;
+align-items: center;
+
+}
+
+.year-list-bar{
+  display: block;
+  text-decoration: none;
+  color:white;
+  padding: 5px;
+  text-align: center;
+}
+.year-list-bar:hover{
+  background-color: white;
+  color: black;
+}
+
+
+.bar-item:hover{
+  background-color:black;
+
+}
+.bar-item:hover .year-list{
+  display: block;
+}

@@ -1,0 +1,114 @@
+
+
+
+/* CARDS  */
+
+
+
+
+.card{
+  margin: 5% 0%;
+
+}
+.card:hover{
+  box-shadow: 4px 2px 8px #999;
+
+}
+.card:hover .card-button{
+
+  visibility:visible;
+  opacity: 1;
+}
+
+.card-body{
+  /* margin: 0% 0% 0% 3%;
+  padding: 6% 0%; */
+  padding: 3px;
+  font-family: "Trirong", sans-serif;
+  text-align: center;
+}
+.card:hover .card-img-top{
+  opacity: .4;
+}
+/* .card:hover .card-body:not(.card-button){
+  background-color: #04AA6D;
+  opacity: .2;
+
+} */
+.card-title{
+  font-weight: 600;
+}
+.card-subtitle{
+  font-weight: 500;
+}
+
+.card-button{
+
+  inline-size: 50%;
+  visibility: hidden;
+  position: absolute;
+  margin: 5px;
+  display: block;
+  top: 200px;
+  left: 100px;
+
+
+}
+.exam-image{
+  opacity: 1;
+  width: 100%;
+}
+.exam-image:hover{
+  opacity: .4;
+}
+
+.title{
+  margin-left: 40px;
+  position: absolute;
+  color: black;
+  top: 50px;
+  width: 100%;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+}
+.title-text{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Trirong", serif;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+
+}
+.title-year{
+  font-weight: bold;
+  color: red;
+  text-align: center;
+
+}
+
+/* # Tablet */
+@media screen and (max-width:900px){
+  .exam-image{
+    height: 500px;
+    opacity: .4;
+  }
+  .title-text{
+    font-size: 30px;}
+  /* text banner */
+  .title{
+    margin-left: 40px;
+    position: absolute;
+    top:80px;
+    left: 0;
+    right: 10px;
+    width: 80%;
+
+  }
+
+  .bar{
+    position: sticky;
+    top: 0;
+  }
+}
